@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+}
+
+/* Estilização da Navbar */
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8d7da; /* Altere para a cor desejada */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+#home {
+  background: url("") no-repeat center center/cover;
+  /* color: white; */
+  padding: 100px 0; /* Adiciona espaçamento superior e inferior */
+  min-height: calc(
+    100vh - 56px
+  ); /* Garante que a seção ocupe pelo menos a altura da tela */
+}
+
+#about img {
+  max-width: 60%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+#portfolio .card {
+  transition: transform 0.2s;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinha o conteúdo no centro horizontalmente */
+  justify-content: center; /* Alinha o conteúdo no centro verticalmente */
+  text-align: center;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.05);
+}
+
+#portfolio .card-img-top {
+  height: 200px;
+  width: 150px;
+  object-fit: contain;
+}
+
+#contact .form-control {
+  margin-bottom: 1rem;
+}
+
+#statusMessage {
+  display: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+#statusMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#statusMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+footer {
+  margin-top: auto;
+}

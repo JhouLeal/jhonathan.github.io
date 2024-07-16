@@ -1,1 +1,204 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhonathan's Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jhonathan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="display-3">Bem-vindo ao meu Portfólio</h1>
+      <p class="lead">Sou Jhonathan, desenvolvedor de sistemas</p>
+      <a href="#about" class="btn btn-primary">Saiba Mais</a>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre Mim</h2>
+          <p>Olá! Meu nome é Jhonathan, sou desenvolvedor de sistemas com uma paixão por tecnologia e inovação. Tenho experiência em diversas áreas da programação, incluindo desenvolvimento web, PHP, JavaScript, e otimização de SEO.</p>
+          <p>Atualmente, estou estudando Análise e Desenvolvimento de Sistemas, e já concluí o ensino médio. Além disso, tenho uma forte vontade de trabalhar na área de tecnologia da informação, onde posso aplicar meus conhecimentos e continuar a aprender e crescer profissionalmente.</p>
+          <p>Alguns dos projetos em que trabalhei incluem:</p>
+          <ul>
+            <li>Desenvolvimento de um site para venda de bolsas de crochê.</li>
+            <li>Trabalho em um ecommerce para a Paty Crochê.</li>
+            <li>Desenvolvimento do site www.easysign.com.br.</li>
+          </ul>
+          <p>Quando não estou programando, gosto de explorar novas tecnologias e métodos de desenvolvimento, sempre buscando melhorar minhas habilidades. Sou uma pessoa dedicada, detalhista e com uma forte capacidade de resolver problemas.</p>
+          <p>Estou sempre aberto a novas oportunidades e desafios. Se você está procurando um desenvolvedor comprometido e entusiasta, sinta-se à vontade para entrar em contato comigo!</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/imgs/about.jpg" alt="Sobre Mim" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Portfólio</h2>
+      <div class="row">
+        <!-- Projeto 1: Site de Bolsas de Crochê -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="assets/imgs/patycroche.png" class="card-img-top" alt="Site de Bolsas de Crochê">
+            <div class="card-body">
+              <h5 class="card-title">Site de Bolsas de Crochê</h5>
+              <p class="card-text">Uma landing page dos produtos e acessórios da loja Paty Crochê.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Site de Bolsas de Crochê" data-description="Um site dedicado à venda de bolsas feitas à mão em crochê.">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <!-- Projeto 2: Ecommerce Paty Crochê -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="assets/imgs/patycroche2.webp" class="card-img-top" alt="Ecommerce Paty Crochê">
+            <div class="card-body">
+              <h5 class="card-title">Ecommerce Paty Crochê</h5>
+              <p class="card-text">Desenvolvendo um site de ecommerce para a Paty Crochê.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Ecommerce Paty Crochê" data-description="Desenvolvendo um site de ecommerce para a Paty Crochê.">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <!-- Projeto 3: Easy Sign -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="assets/imgs/logo-easy-sign-comunicacao-visual.svg" class="card-img-top" alt="Easy Sign">
+            <div class="card-body">
+              <h5 class="card-title">Easy Sign</h5>
+              <p class="card-text">Trabalhando no site www.easysign.com.br na parte de SEO e desenvolvimento.</p>
+              <a href="https://www.easysign.com.br" class="btn btn-primary" target="_blank">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Serviços</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">Web Developer</h5>
+              <p class="card-text">Atuo como Web Developer em sites de pequenas empresas e startups.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">Front-End Developer</h5>
+              <p class="card-text">Construo estruturas front-end para sites e serviços pequenos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">Back-End</h5>
+              <p class="card-text">Atuo em estruturas de banco de dados e técnicas de SEO.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contato</h2>
+      <form id="contactForm" method="POST" action="send_email.php">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <div id="statusMessage" class="mt-3"></div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p>&copy; 2024 Jhonathan. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">Detalhes do Projeto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Detalhes do Projeto -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
