@@ -14,16 +14,61 @@
       margin: 0;
     }
 
+    /* HERO */
     .hero {
-      background: linear-gradient(to right, #2c3e50, #4ca1af);
-      color: white;
-      text-align: center;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      align-items: stretch;
       height: 100vh;
     }
+
+    /* Estilo para a coluna esquerda com fundo branco */
+    .left-column {
+      background-color: #ffffff;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .logo-jumping {
+      width: 150px;
+      animation: jump 1s ease-in-out infinite;
+    }
+
+    @keyframes jump {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Estilo para a coluna direita com fundo degradê */
+    .right-column {
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        text-align: center;
+      }
+
+      .left-column,
+      .right-column {
+        flex-direction: column;
+        min-height: 50vh;
+      }
+
+      .logo-jumping {
+        margin-bottom: 20px;
+      }
+    }
+
+    /* HERO FIM */
 
     .gallery img {
       width: 100%;
@@ -222,7 +267,7 @@
           <a class="nav-link" href="#about">Sobre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#technologies">Tecnologias</a>
+          <a class="nav-link" href="#technologies">Habilidades</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projetos</a>
@@ -236,10 +281,20 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="container">
-      <h1>Bem-vindo ao meu Portfólio</h1>
-      <p>Desenvolvedor Web e Estudante de TI</p>
-      <button class="btn btn-light mt-3" onclick="scrollToAbout()">Saiba mais</button>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <!-- Coluna Esquerda - Logo com fundo branco -->
+        <div class="col-12 col-md-6 left-column text-center text-md-left d-flex align-items-center justify-content-center">
+          <img src="fivecon.png" alt="Logo" class="logo-jumping">
+        </div>
+
+        <!-- Coluna Direita - Texto de Boas-Vindas com fundo degradê -->
+        <div class="col-12 col-md-6 right-column text-center text-md-left d-flex flex-column align-items-center justify-content-center">
+          <h1>Bem-vindo ao meu Portfólio</h1>
+          <p>Desenvolvedor Web e Estudante de TI</p>
+          <button class="btn btn-light mt-3" onclick="scrollToAbout()">Saiba mais</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -254,7 +309,7 @@
         <div class="about-text">
           <h3>Olá, eu sou Jhonathan!</h3>
           <p>Sou desenvolvedor web e estudante na área de tecnologia da informação. Tenho experiência em programação, SEO e desenvolvimento web. Estou sempre buscando aprender e melhorar minhas habilidades.</p>
-          <p>Atualmente estou trabalhando em um projeto da empresa <a href="https://www.easysign.com.br/">Easy Sign</a>, modificando e aprimorando as estruturas de SEO e criando novas páginas como esta -> <a href="https://www.easysign.com.br/roll-up">Aqui!</a>.</p>
+          <p>Atualmente estou trabalhando em um projeto da empresa <a href="https://www.easysign.com.br/">Easy Sign</a>, modificando e aprimorando as estruturas de SEO e criando novas páginas como esta -> <a href="https://www.easysign.com.br/roll-up">Aqui!</a> e criando um projeto para a casa de eventos <a href="https://casadeeventosp.com.br/">Portão7</a>.</p>
         </div>
       </div>
     </div>
@@ -313,6 +368,12 @@
           <i class="fa-solid fa-headset"></i>
           <p>ADS / SC</p>
         </div>
+        <div class="col-12 d-flex justify-content-center my-4">
+          <div class="tech-item text-center">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -330,6 +391,9 @@
         </div>
         <div class="col-md-4">
           <img src="app-easy-sign.png" alt="Projeto 3" data-toggle="modal" data-target="#projectModal" data-img="app-easy-sign.png">
+        </div>
+        <div class="col-md-4">
+          <img src="portao7.png" alt="Projeto 4" data-toggle="modal" data-target="#projectModal" data-img="portao7.png">
         </div>
         <!-- Adicione mais imagens conforme necessário -->
       </div>
