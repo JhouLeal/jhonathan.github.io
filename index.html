@@ -72,7 +72,8 @@
 
     .gallery img {
       width: 100%;
-      height: auto;
+      height: 500px;
+      object-fit: cover;
       margin-bottom: 15px;
       cursor: pointer;
     }
@@ -143,10 +144,6 @@
       border-radius: 50%;
       width: 100%;
       height: auto;
-    }
-
-    .gallery img {
-      height: 500px;
     }
 
     @media (max-width: 768px) {
@@ -226,7 +223,7 @@
       .modal-zoom img {
         cursor: zoom-in;
         width: 400px;
-        height: 400px;
+        height: auto;
         transition: transform 0.3s ease;
         transform-origin: center center;
       }
@@ -234,7 +231,7 @@
       .modal-zoom .modal-content {
         height: auto;
         width: 100%;
-        max-height: 80vh;
+        max-height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -384,18 +381,25 @@
       <h2 class="section-title">Galeria de Projetos</h2>
       <div class="row gallery">
         <div class="col-md-4">
+          <h3>Paty Crochê - Site Completo</h3>
           <img src="paty-croche-site.png" alt="Projeto Paty Crochê" data-toggle="modal" data-target="#projectModal" data-img="paty-croche-site.png">
         </div>
         <div class="col-md-4">
+          <h3>Páginas SEO - Easy Sign</h3>
           <img src="easy-sign-roll-up.png" alt="Easy Sign Roll-Up" data-toggle="modal" data-target="#projectModal" data-img="easy-sign-roll-up.png">
         </div>
         <div class="col-md-4">
+          <h3>App - Easy Sign</h3>
           <img src="app-easy-sign.png" alt="Projeto 3" data-toggle="modal" data-target="#projectModal" data-img="app-easy-sign.png">
         </div>
         <div class="col-md-4">
-          <img src="portao7.png" alt="Projeto 4" data-toggle="modal" data-target="#projectModal" data-img="portao7.png">
+          <h3>Portão 7 - Site Completo</h3>
+          <img src="portao-7-home.jpeg" alt="Projeto 4" data-toggle="modal" data-target="#projectModal" data-img="portao-7-home.jpeg">
         </div>
-        <!-- Adicione mais imagens conforme necessário -->
+        <div class="col-md-4">
+          <h3>Alterações Home - Easy Sign</h3>
+          <img src="easy-sign-home.jpeg" alt="Projeto 5" data-toggle="modal" data-target="#projectModal" data-img="easy-sign-home.jpeg">
+        </div>
       </div>
     </div>
   </section>
@@ -426,7 +430,9 @@
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      <p>© 2024 Jhonathan. Todos os direitos reservados.</p>
+      <p>©
+        <script>document.write(new Date().getFullYear());</script> Jhonathan. Todos os direitos reservados.
+      </p>
       <p>Desenvolvido por Jhonathan Leal</p>
       <p>
         <a href="#about">Sobre</a> |
